@@ -1,0 +1,40 @@
+{
+  "name": "assignemnet-aumnitechworks-com",
+  "version": "1.0.0",
+  "description": "SDET Take-Home Assignment using Playwright (Reddit & Gmail)",
+  "scripts": {
+    "postinstall": "npx playwright install --with-deps",
+    "test": "playwright test",
+    "reddit": "playwright test src/test/reddit.spec.ts",
+    "gmail": "playwright test src/test/gmail.spec.ts",
+    "allure:generate": "allure generate ./allure-results --clean",
+    "allure:open": "allure open ./allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raza1709/assignemnet-aumnitechworks-com.git"
+  },
+  "keywords": [
+    "playwright",
+    "sdet",
+    "qa",
+    "automation",
+    "reddit",
+    "gmail"
+  ],
+  "author": "Raza Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raza1709/assignemnet-aumnitechworks-com/issues"
+  },
+  "homepage": "https://github.com/raza1709/assignemnet-aumnitechworks-com#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.3.0",
+    "allure-playwright": "^2.15.0",
+    "typescript": "^5.4.0"
+  }
+}
